@@ -12,4 +12,4 @@ console.log(typeof valueInNumber)
 // "" =>false;
 //"hitesh" =>true 
 let someNumber=33
-let stringNumber=String(someNumber)
+let stringNumber=String(someNumbernode )
