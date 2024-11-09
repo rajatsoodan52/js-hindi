@@ -5,7 +5,7 @@
  //object literal
 // object.create// this is ingleton object made via constructor
 
-const mysym=Symbol("key1")
+const mysym=Symbol("key1");
 
  const jsUser={
     name:"raj",
@@ -17,14 +17,22 @@ const mysym=Symbol("key1")
     idLoggedIn: false,
     lastLoginDays:["Monday","saturday"]
  }
- console.log(jsUser.email)
- console.log(jsUser["email"])
- console.log(jsUser["full name"]) //its the only way to access this one 
- console.log(typeof(jsUser.mysym))//String
- console.log(jsUser[mysym])
+//  console.log(jsUser.email)
+//  console.log(jsUser["email"])
+//  console.log(jsUser["full name"]) //its the only way to access this one 
+//  console.log(typeof(jsUser.mysym))//String
+//  console.log(jsUser[mysym])
 
  jsUser.email="hitesh@chatgpt.com"
- Object.freeze(jsUser) //changes cant be made now its final
+//  Object.freeze(jsUser) //changes cant be made now its final
  jsUser.email="hitesh@mkj.com"
  console.log(jsUser)
+ jsUser.greeting=function(){
+   console.log("Hello js user")
+ }
+ jsUser.greetingTwo=function(){
+   console.log(`Hello JS user,${this.name}`)
+ }
+ console.log(jsUser.greeting());
+ console.log(jsUser.greetingTwo());
 
