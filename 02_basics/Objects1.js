@@ -67,8 +67,19 @@ console.log(courseInstructor)
 // like mere pass ek object hai usko baar baar use krne mehkeys fetch krne seh acha
 //define like const{} give the variable name you want infront of that variable after
 // semicolon and then use that one anywhere you want
-// const navbar=({company}) =>{
+//line 1 const navbar=({company}) =>{
 
-// } these 3 lines react
-// navbar(company="hitesh")
+// line 2 } these 3 lines react
+// line 3 navbar(company="hitesh")
 // this process is called destructuring of objects
+//API
+// {
+// "name": "ome",
+// "coursename": "jsi in hndi",
+// "price": "free"
+// } 
+[
+    {},
+    {},
+    {}
+]
