@@ -43,3 +43,4 @@ map.set('Fr',"France")
 //     console.log(key,':-',value);
     
 // } error:- Objects are not iteratable
+// Important note for of loop works only on maps and not on objects
