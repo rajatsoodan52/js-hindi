@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello everyone here now</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+   const star=function(str){
+    console.log(str,Date.now());
+    }
+
+    let interval;
+    document.querySelector('#start').addEventListener('click',function() {
+        interval=setInterval(function(){
+            console.log('hi')
+        },1000)
+    })
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(interval)
+        console.log('clicked')
+    })
+</script>
+</html>
+<!-- SetTimeout(function/function reference,milliseconds) 
+ClearTimeout(variable which hold the reference of settimeout)
+SetInterval(function /functiom reference, milisecond) - repeat until we clear it. 
+ClearInterval(reverence of function) -->
